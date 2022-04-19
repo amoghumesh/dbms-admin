@@ -72,6 +72,7 @@ nav {
     display: inline-block;
     height: 100%;
     cursor: pointer;
+    position: relative;
 }
 
 .nav-element-white {
@@ -106,12 +107,15 @@ nav {
 
 .bar {
     width: 15px;
-    height: 2px;
+    max-height: 3px;
+    height: 3px;
+    display: block;
     background-color: #202121;
     border-radius: 2px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     margin-right: 0;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 .ico-menu {
@@ -136,10 +140,10 @@ nav {
     content: "";
     display: block;
     width: 15px;
-    height: 2px;
+    height: 3px;
     background: #a6abab;
-    position: relative;
     top: 0;
+    position: relative;
     left: 100%;
     z-index: 1;
     transition: .3s;
@@ -147,7 +151,7 @@ nav {
 
 .menu:hover .ico-menu .bar:after{left:0}
 
-.bar:nth-child(1) {
+/* .bar:nth-child(1) {
     top: 0px;
 }
 .bar:nth-child(2) {
@@ -155,7 +159,7 @@ nav {
 }
 .bar:nth-child(3) {
     top: 8px;
-}
+} */
 
 .bar:nth-child(1):after {
     transition-delay: .1s;
