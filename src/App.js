@@ -1,12 +1,10 @@
 import React from "react"
-import './App.css';
-import Navbar from "./components/navbar"
-import Leftoptions from "./components/leftoptions"
+import Header from "./components/header"
+// import Navbar from "./components/navbar"
 function App() {
   return (
     <>
-      <Navbar />
-        <Leftoptions />
+      <Header />
     </>
   );
 }

@@ -1,10 +1,10 @@
 import gear from "../images/gear.png"
 import "../css/navbar.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-export default function navbar() {
+export default function Navbar(props) {
     return (
         <nav className="navbar navbar-expand" role="navigation">
-            <div className="home left-block-width nav-element nav-element-white menu">
+            <div className="home left-block-width nav-element nav-element-white menu" onClick={props.menuClick}>
                     <div className="ico-menu center">
                         <div className="bar"></div>
                         <div className="bar"></div>
