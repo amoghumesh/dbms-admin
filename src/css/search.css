@@ -11,6 +11,7 @@ body {
 
 .searchTerm {
     width: 100%;
+    min-width: 50px;
     border: 3px solid #00B4CC;
     border-right: none;
     padding: 5px;
@@ -52,12 +53,17 @@ body {
 
 .btn-secondary{
     color: #fff;
-    background-color: #00B4CC;
+    background-color: #00B4CC!important;
     border-color: #00B4CC;
 } 
 
+.btn-secondary:hover{
+    background-color: #00a1b6!important;
+    color: #fff;
+}
+
 .wrap {
-    width: 50%;
+    width: 100%;
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -68,4 +74,15 @@ body {
 .search-selector{
     width:fit-content;
     margin-right: 5px;
+}
+
+.ed-buttons{
+    min-width: 140px;
+    width: 70%;
+    background-color: #00B4CC;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+    margin-right: 0px;
 }
