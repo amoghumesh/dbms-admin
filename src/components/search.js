@@ -4,13 +4,16 @@ import "../css/search.css"
 import { AiOutlineSearch } from "react-icons/ai"
 export default function Searchbar(props) {
     const columns = props.columns;
-    const [searchText, setSearchText] = React.useState("Name");
+    const [searchText, setSearchText] = React.useState(columns[0].Header);
     const [dropdownOpen, setDropdownOpen] = React.useState(false);
+    if(searchText !== columns[0].Header){
+        setSearchText(columns[0].Header);
+    }
     function toggle() {
         setDropdownOpen(prevStatus => !prevStatus);
     }
     let button_list = columns.map((item, index)=>{
-        return <div onClick={()=>{setSearchText(item.Header);}}><DropdownItem>{item.Header}</DropdownItem></div>
+        return <div key = {index} onClick={()=>{setSearchText(item.Header);}}><DropdownItem>{item.Header}</DropdownItem></div>
     })
 
     return (
