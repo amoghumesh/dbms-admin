@@ -1,12 +1,12 @@
 import React from "react"
-import Navbar from "./navbar"
-import Sidebar from "./sidebar"
-import TableManager from "./tablehandler.js"
-import "../css/header.css"
+import Navbar from "./js/navbar"
+import Sidebar from "./js/sidebar"
+import TableManager from "./js/tablehandler.js"
+import "./css/header.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 
-export default function Header() {
+export default function App() {
     const [menuCollapsedStatus, setMenuCollapsedStatus] = React.useState(false);
     const [pageContent, setPageContent] = React.useState(0);
     // pageContent: 0 = landing, 1 = Police, 2 = Stations, 3 = Complaints, 4 = Offenses, 5 = Camera
