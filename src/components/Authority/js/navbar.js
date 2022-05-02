@@ -12,7 +12,7 @@ export default function Navbar(props) {
                     </div>
                 <div className="center">Menu</div>
             </div>
-            <div className="left-blocks left-block-width nav-element nav-element-white"><div className="center">Home</div></div>
+            <div className="left-blocks left-block-width nav-element nav-element-white" onClick={props.homeClick}><div className="center">Home</div></div>
             <div className="navbar-brand mx-auto"><center><h2>Admin</h2></center></div>
             <div className="nav-element settings nav-element-white"><img className="settings-image" src={gear} alt="gear" /></div>
             <div className="logout nav-element nav-element-dark "><div className="center">Logout</div></div>

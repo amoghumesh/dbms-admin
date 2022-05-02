@@ -16,9 +16,12 @@ export default function App() {
     function setContent(val) {
         setPageContent(() => val);
     }
+    function homeClick(){
+        setPageContent(() => 0);
+    }
     return (
         <div className="main">
-            <Navbar menuClick={menuClick} />
+            <Navbar menuClick={menuClick} homeClick = {homeClick} />
             <div className="bod">
 
                 <Sidebar menuClick={menuClick} menuCollapsedStatus={menuCollapsedStatus} pageContent={pageContent} setContent={setContent} />
